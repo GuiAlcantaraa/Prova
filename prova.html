@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //exercicio 1 //
+       var precoProduto = window.prompt('Digite o valor do Arroz: ')
+        var formaPagamento = window.prompt('Forma de pagamento: 1 - A vista em dinehiro ou cheque ganha 10% de desconto, 2 - Cartão Credito à vista ganha 15% de desconto, 3 - Parcelado 2x = preço normal sem juros, 4 - Parcelado 2x Cartão de Credito ganha um  Acrescimo de 10%')
+       
+        var pagamento1 = (parseFloat(precoProduto)*10 / 100);
+        var porcentagemPagamento1 = parseFloat(precoProduto) - parseFloat(pagamento1);
+        var pagamento2 = (parseFloat(precoProduto)*15 / 100);
+        var porcentagemPagamento2 = parseFloat(precoProduto) - parseFloat(pagamento2);
+        var pagamento3 = precoProduto
+        var pagamento4 = (parseFloat(precoProduto)*10 / 100);
+        var porcentagemPagamento4 = parseFloat(precoProduto) + parseFloat(pagamento4);
+
+        switch (formaPagamento){
+            case "1":
+            console.log(`${porcentagemPagamento1} Reais com 10% de desconto`)
+            break
+            case "2":
+            console.log(`${porcentagemPagamento2} Reais com 15% de desconto`)
+            break
+            case "3":
+            console.log(`${pagamento3} Reais sem desconto`)
+            break
+            case "4":
+            console.log(`${porcentagemPagamento4} Reais com 10% de acréscimo`)
+            break
+            default:
+            console.log(`Escolha apenas entre 1 a 4`)
+            }
+
+
+        //exercicio 2 //
+
+        var pratoEmkg = window.prompt("Entre com o peso do prato do cliente em KG")
+        var pesoPrato = (pratoEmkg * 12)
+        
+        console.log(`o preço para pagara é ${pesoPrato}`)
+            
+        //exercicio 3//
+      var lata = 0.350
+        var garrafa600ml = 0.600
+        var garrafa2l = 2
+
+        var quantidadeDeLata = window.prompt(`Digite a quantidade de latas 350ml`)
+        var quantidadeGarrafa600ml = window.prompt(`Digite a quantidade de garrafas 600ml`)
+        var quantidadeGarrafa2l  = window.prompt(`Digite a quantidade de garrafa 2l`)
+
+        quantidadeDeLitros = quantidadeDeLata*lata+quantidadeGarrafa600ml*garrafa600ml+quantidadeGarrafa2l*garrafa2l
+        console.log(`quantidade em litros é ${quantidadeDeLitros}`)
+       
+        //exercicio 4//
+
+   /* var listadeNotas= []
+    var listadeNotas = window.prompt("Digite a nota 1")
+
+
+    listadeNotas.push()
+    listadeNotas.push()
+    listadeNotas.push()
+    listadeNotas.push()
+    listadeNotas.push()
+    listadeNotas.push()
+    listadeNotas.push()
+    listadeNotas.push()
+    listadeNotas.push()
+    listadeNotas.push()*/
+    
+    
+    //exercicio 5//
+        var numero = 10;
+        var i = 1;
+        var H = 0;
+        var numero2 = 10;
+        
+        while(i <= numero){
+             H =  H + 10
+             i++
+        }
+        console.log(`resultado = ${H}`)
+
+    //exercicio 6//
+        var mediaFinal = 10;
+        var frequenciaAluno = 50;
+        
+         
+        if (mediaFinal < 7 || frequenciaAluno < 75){
+            console.log(`reprovado`);
+        } else {
+            console.log(`aprovado`);
+        }
+    //exercicio 7//
+    
+    /*clean code ajuda a entender melhor o codigo,
+    ser o mais enxuto possivel, quando voce tem um codigo limpo fica mais facil entender como tudo acontece, 
+    facilitando na manutenção do codigo.*/
+
+    
+
+
+
+
+
+
+    </script>
+</body>
+</html>
